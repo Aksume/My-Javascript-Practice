@@ -61,3 +61,5 @@ ${adj6} Poodle. Every ${noun6} should have a loyal dog.`;
 
 //Console log the completed story
 console.log(story);
+
+
