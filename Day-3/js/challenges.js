@@ -43,4 +43,5 @@ var firstNumber = prompt("Enter the first number");
 var secondNumber = prompt("Enter the second number");
 
 var theTotal = parseInt(firstNumber) + parseInt(secondNumber);
+alert(firstNumber + " added to " + secondNumber + " equals: " + theTotal);
 console.log(firstNumber + " added to " + secondNumber + " equals: " + theTotal);
