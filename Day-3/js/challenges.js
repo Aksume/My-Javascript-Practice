@@ -16,6 +16,15 @@ function nameRevers(str) {
 	var alert1 = str.split(" ").reverse().join(" ");
 	console.log(alert1);
 }
+// 2ND method (new)
+var myName = prompt("Enter your first name and last name");
+var blankIndex = myName.indexOf(" ");
+var lastFirst =
+	myName.substring(blankIndex, myName.length) +
+	", " +
+	myName.substring(0, blankIndex);
+console.log(lastFirst);
+
 // console.log(nameRevers("Sara Mahamod"));
 nameRevers("Sara Mahamod");
 
@@ -45,3 +54,5 @@ var secondNumber = prompt("Enter the second number");
 var theTotal = parseInt(firstNumber) + parseInt(secondNumber);
 alert(firstNumber + " added to " + secondNumber + " equals: " + theTotal);
 console.log(firstNumber + " added to " + secondNumber + " equals: " + theTotal);
+
+
