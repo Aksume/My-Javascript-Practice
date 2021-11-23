@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cats Api</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="head text-center">
+            <h1 class="">Cat's Facts Api</h1>
+
+            <button data-toggle="modal" data-target="#model" class="btn btn-primary my-3 getbutton">Get Facts</button>
+        </div>
+        <div class="modal" id="model" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Cats facts generator</h3>
+
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="animal_type">Animal Type</label>
+                                <input type="text" class="form-control" value="cat" id="animal_type"
+                                    aria-describedby="emailHelp">
+                            </div><br><br>
+                            <div class="form-group">
+                                <label for="num_facts">Number of Facts</label>
+                                <input type="number" class="form-control" id="num_facts">
+                                <small id="emailHelp" class="form-text text-muted">MAX: 30</small><br><br>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <br><br>
+                        <button type="button" class="btn btn-primary generate_btn"
+                            data-dismiss="modal">Generate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-group mx-3 my-3 facts">
+        </div>
+
+    </div>
+</body>
+
+</html>
