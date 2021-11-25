@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let i, len, text;
+for (i = 0, len = cars.length, text = ""; i < len; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+/////////////////js statement 1
+for (let i = 0, len = cars.length, text = ""; i < len; i++) {
+  text += cars[i] + "<br>";
+}
+ 
+statement 2
+ let i = 2;
+let len = cars.length;
+let text = "";
+for (; i < len; i++) {
+  text += cars[i] + "<br>";
+}
+statement 3
+
+let i = 0;
+let len = cars.length;
+let text = "";
+for (; i < len; ) {
+  text += cars[i] + "<br>";
+  i++;
+}
+
+Loop Scope
+////Using var in a loop:
+var i = 5;
+
+for (var i = 0; i < 10; i++) {
+  // some code
+}
+// Here i is 10
+
+Using let in a loop:
+let i = 5;
+
+for (let i = 0; i < 10; i++) {
+  // some code
+}
+
+// Here i is 5
+
+
+
+
+n0=6,7
+
+function fetchFacts() {
+  fetch(`https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=1`)
+    .then((response) => response.text())
+    .then((data) => {
+      let fact = JSON.parse(data).text;
+      console.log(fact);
+      document.getElementById("demo").innerHTML = fact;
+    });
+}
+fetchFacts();
+
+window.onload = () => {
+  const nextButton = document.createElement("button");
+
+  document.body.append(nextButton);
+  nextButton.innerHTML = "Next";
+  nextButton.addEventListener("click", function () {
+    fetchFacts();
+  });
+};
+keze 
+html part new
+ <!-- My-way -->
+    <h1>Cat-facts</h1>
+    <!-- <form>
+    <input id="clickMe"type="button"value="press Me to get a cat fact"onclick="doFunction()" value="button"/> -->
+    <!-- second-way -->
+    js-part
+
+    // MY_WAY is not done yet 
+
+// let numbrFact =1,
+// //   let animalType = "cat";
+// function fetchFact() {
+//     `https://cat-fact.herokuapp.com/facts/random?animal_type=${animalType}&amount=&{numberFacts}`
+
+//         .then((response) => response.text())
+//         .then((data) => {
+//             // let catfact = JSON.parse(data).text;
+//             // let updateDate = JSON.parse(data).updatedAt;
+//             alert(JSON.parse(data).text);
+//         })
+//         .catch(error => alert(error))
+// };
+// function doFunction() {
+//     fetchFacts()
+// }
+eskezi
+
+
+
+
+
+
+ form study with 
+
+<form action="" method="get" class="form-example">
+  <div class="form-example">
+    <label for="name">Enter your name: </label>
+    <input type="text" name="name" id="name" required>
+  </div>
+  <div class="form-example">
+    <label for="email">Enter your email: </label>
+    <input type="email" name="email" id="email" required>
+  </div>
+  <div class="form-example">
+    <input type="submit" value="Subscribe!">
+  </div>
+</form>
+
+clas
+form.form-example {
+    display: table;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+ 
+
+show
+<button onclick="toggleClock()" id="clockButton">Show clock</button>
