@@ -1,3 +1,8 @@
+you tube-magic 8 ball link https://www.youtube.com/watch?v=3gVUidLHdZ4
+
+https://github.com/vinsonf 
+
+
 <!DOCTYPE html>
 <html>
 <body>
@@ -147,3 +152,16 @@ label, input {
 
 show
 <button onclick="toggleClock()" id="clockButton">Show clock</button>
+
+
+
+About camel writing link 
+https://chaseadams.io/posts/most-common-programming-case-types/
+
+
+
+
+
+git add .
+git commit -m "final-project"
+git push -u origin main
